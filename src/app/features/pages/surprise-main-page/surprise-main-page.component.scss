@@ -1,35 +1,85 @@
 .surprise-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    background-color: #f9f9f9;
-    transform: scale(0);
-    opacity: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f9f9f9;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.surprise-container.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+h1 {
+  font-family: 'Cursive', sans-serif;
+  font-size: 2em;
+}
+
+.gift-image {
+  width: 150px;
+  height: 150px;
+  margin: 20px 0;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  color: grey;
+}
+
+
+:host {
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section-one {
+  height: 100vh;
+  width: 100vw;
+  background: url('./../../../../assets/bday-647.gif') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .scroll-button {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
   }
-  
-  .surprise-container.show {
-    transform: scale(1);
-    opacity: 1;
-  }
-  
+}
+
+.section-two {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; // Adjust as needed
+  text-align: center;
+
   h1 {
-    font-family: 'Cursive', sans-serif;
-    font-size: 2em;
+    font-size: 24px;
+    color: #333;
   }
-  
-  .gift-image {
-    width: 150px;
-    height: 150px;
-    margin: 20px 0;
-  }
-  
-  p {
-    font-family: 'Arial', sans-serif;
-    font-size: 1em;
-    color: grey;
-  }
-  
+}

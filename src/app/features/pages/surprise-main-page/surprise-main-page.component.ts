@@ -20,6 +20,14 @@ export class SurpriseMainPageComponent {
         this.surpriseModal.openModal();
     }, 0);
   }
+
+  scrollToSectionTwo() {
+    const element = document.querySelector('.section-two');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   openModal() {
     if (this.surpriseModal)
       this.surpriseModal.openModal();

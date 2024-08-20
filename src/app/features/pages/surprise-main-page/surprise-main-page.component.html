@@ -1,8 +1,9 @@
-<div class="surprise-container">
-    <h1>Somebody sent you a gift</h1>
-    <img src="assets/gift-image.png" alt="Gift" class="gift-image">
-    <p>Press to open</p>
-  </div>
-  <button (click)="openModal()">Open Surprise Modal</button>
+<div class="section-one">
+  <button (click)="scrollToSectionTwo()" class="scroll-button w-100">Scroll to Section Two</button>
+</div>
+<div class="section-two">
+  <h1>Section Two</h1>
+  <!-- Content for section two -->
+</div>
 
-  <app-surprise-modal></app-surprise-modal>
+<app-surprise-modal></app-surprise-modal>

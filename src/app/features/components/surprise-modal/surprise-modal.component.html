@@ -26,23 +26,41 @@
 </div> -->
 
 <!-- surprise-modal.component.html -->
-<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+  data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog modal-fullscreen-sm-down">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal Title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div> -->
-      <div class="modal-body">
-        <p>here i want to make like a count down timer which is for birthday surprise, you can design your self, i just want pretty UI and surprise ,cna you help </p>
+      <div class="modal-body"
+        style="background: linear-gradient(to right, rgba(223, 110, 114, 0.5), rgb(223, 110, 114));">
+        <div style="
+          padding: 5%; margin-top: 35%;
+          background: linear-gradient(to left, rgba(218, 79, 83, 0.5), rgb(219, 60, 65));
+          border-top-left-radius: 150px;border-top-right-radius: 150px;
+          border: 1px solid rgb(221, 150, 150);
+          ">
+          <div style="border: 1px solid rgb(189, 147, 147); border-top-left-radius: 150px;border-top-right-radius: 150px;">
+            <div style=" padding-top: 30%; ">
+              <h2>🎂</h2>
+              <h5>✨Happy Birthday To✨</h5>
+              <h5>✨Lim Ke Wei✨</h5>
+              <img src="assets/profile.png" width="100px" height="100px" style="border-top-left-radius: 150px;border-top-right-radius: 150px;"/>
+              <p class="pacifico-regular" style="margin-top: 5%; font-size: 30px; color: white">20th Birthday</p>
+              <div class="countdown-timer" id="countdownTimer" *ngIf="!showGift">{{countdownValue}}</div>
+              <!-- <p class="surprise-message" id="surpriseMessage" style="color: white;">Get ready for your surprise!</p> -->
+
+              <div class="gift-box" (click)="toggleGift()" *ngIf="showGift">
+                <!-- <img *ngIf="!isOpened" src="assets/closed.png" alt="Closed Gift Box" class="transparent" id="giftBoxImage" width="50px" height="50px"/> -->
+                <p *ngIf="!isOpened" class="pacifico-regular" style="font-size: 30px; color: white;">Click me 🎁</p>
+                <!-- <img *ngIf="isOpened" src="assets/opened.png" alt="Opened Gift Box" class="clickable"  /> -->
+              </div>
+
+              <!-- <div class="confetti" id="confetti" hidden></div> -->
+            </div>
+          </div>
+
+        </div>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div> -->
     </div>
   </div>
 </div>
-
-  
-  

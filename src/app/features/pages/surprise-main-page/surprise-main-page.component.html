@@ -1,9 +1,12 @@
-<div class="section-one">
-  <button (click)="scrollToSectionTwo()" class="scroll-button w-100">Scroll to Section Two</button>
+<div class="bluronfirst3sec" [class.blur]="isBlurred">
+  <div class="section-one">
+    <button (click)="scrollToSectionTwo()" class="scroll-button w-100">⬇️Scroll to Section Two</button>
+  </div>
+  <div class="section-two">
+    <h1>Section Two</h1>
+    <!-- Content for section two -->
+  </div>
 </div>
-<div class="section-two">
-  <h1>Section Two</h1>
-  <!-- Content for section two -->
-</div>
+
 
 <app-surprise-modal></app-surprise-modal>

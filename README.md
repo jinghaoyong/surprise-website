@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+to push code & deploy  to firebase : 
+1> firebase login (for device which didn;t sign in yet)
+2> firebase init , `dist`, options: outputpath : "dist" << careful , need to be correct,
+3> ng build
+4> see under the /dist is whether got the files like assets 3rdpartylicenses.txt , css js file, if under another inside folder like browser, then cut them to under /dist in order to work
+5> firebase deploy
